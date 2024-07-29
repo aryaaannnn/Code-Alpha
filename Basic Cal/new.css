@@ -1,0 +1,106 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.btn {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn:active {
+    background-color: #bbb;
+}
+
+.btn[colspan="2"] {
+    grid-column: span 2;
+}
+
+.btn[rowspan="2"] {
+    grid-row: span 2;
+}
+.spe {
+    background-color: orange;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.spe:hover {
+    background-color: #ddd;
+}
+
+.spe:active {
+    background-color: #bbb;
+}
+
+.spe[colspan="2"] {
+    grid-column: span 2;
+}
+
+.spe[rowspan="2"] {
+    grid-row: span 2;
+}
+.not {
+    background-color: gray;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.not:hover {
+    background-color: #ddd;
+}
+
+.not:active {
+    background-color: #bbb;
+}
+
+.not[colspan="2"] {
+    grid-column: span 2;
+}
+
+.not[rowspan="2"] {
+    grid-row: span 2;
+}
